@@ -1,0 +1,77 @@
+<!--
+  Generated template for the Login component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+
+<ion-content class="content" no-padding>
+
+    <div class="Page">
+
+      <ion-row>
+
+        <ion-col>
+
+          <div class="logo">
+
+            <p>Bloggins</p>
+
+          </div>
+
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+
+        <ion-col>
+
+          <p class="welcome-text">your world awaits</p>
+
+        </ion-col>
+
+      </ion-row>
+
+    </div>
+
+    <ion-list inset no-lines>
+
+      <ion-item class="transparent">
+
+        <ion-label floating color="light">Email</ion-label>
+        <ion-input class="bordered" [(ngModel)]="email" type="email"></ion-input>
+
+      </ion-item>
+
+      <ion-item class="transparent">
+
+        <ion-label floating color="light">Password</ion-label>
+        <ion-input class="bordered" [(ngModel)]="password" type="password"></ion-input>
+
+      </ion-item>
+
+      <ion-item class="transparent">
+
+        <button ion-button block class="bordered" (click)="login()" padding>Log In</button>
+
+      </ion-item>
+
+      <ion-item class="transparent">
+
+        <p class="hint">Terms & Conditions Apply</p>
+
+      </ion-item>
+
+      <ion-item class="transparent">
+
+        <p class="hint">Don't have an account? ' <span class="hint" (click)="toSignup()">SignUp</span> </p>
+
+      </ion-item>
+
+    </ion-list>
+
+    
+
+
+</ion-content>

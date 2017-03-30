@@ -1,0 +1,73 @@
+page-profile {
+          .content{
+                    background: #00d2ff; /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          }
+
+          .header{
+                    height: 200px;
+                    width: 100%;
+          }
+
+          ion-item.transparent {
+                    background-color: transparent;
+          }
+
+          div.edit {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+          }
+
+          ion-item.transparent{
+                    background-color: transparent;
+
+                    ion-label{
+                              color: #000;
+                    }
+          }
+
+          ion-card.details{
+                    position: absolute;
+                    top: 25%;
+
+                    ion-row ion-col{
+                              text-align: center;
+                              font-style: italic;
+                              color: #000;
+                    }
+          }
+
+          div.picture{
+                    width: 90px;
+                    height: 90px;
+                    position: absolute;
+                    border-radius: 50%;
+                    top: 30%;
+                    left: 62%;
+                    transform: translate(-50%, -50%);
+
+                    img{
+                              width: 90px;
+                              height: 90px;
+                              border: 2px solid #00d2ff;
+                              border-radius: 50%;
+                              position: absolute;
+                              transform: translate(-50%, -50%);
+                    }
+
+          }
+
+
+          ion-icon.edit {
+                    position: absolute;
+                    top: 15%;
+                    right: 30%;
+          }
+
+          hr.hint{
+                    height: 3px;
+                    background-color: #3a7bd5;
+          }
+}

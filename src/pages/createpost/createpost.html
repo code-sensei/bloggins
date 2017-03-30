@@ -1,0 +1,58 @@
+<!--
+  Generated template for the Createpost page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar  color="theme">
+    <ion-title>New Post</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="content">
+
+  <ion-list no-lines>
+
+    <ion-item class="transparent">
+
+      <ion-label stacked color="light">Title</ion-label>
+      <ion-input [(ngModel)]="title"></ion-input>
+
+    </ion-item>
+
+     <ion-item class="transparent">
+
+      <ion-label stacked color="light">Tags</ion-label>
+      <ion-input [(ngModel)]="tags"></ion-input>
+
+    </ion-item>
+
+      <ion-note item-right style="padding-left: 30%">separate tags with comma</ion-note>
+
+    <ion-item class="transparent">
+
+      <ion-label stacked color="light">Summary</ion-label>
+      <ion-input [(ngModel)]="summary"></ion-input>
+
+    </ion-item>
+
+     <ion-item class="transparent">
+
+      <ion-label stacked color="light">Body</ion-label>
+      <ion-textarea [(ngModel)]="body"></ion-textarea>
+
+    </ion-item>
+
+     <ion-item class="transparent">
+
+      <button ion-button padding color="light" (click)="newPost()" block outline>POST</button>
+
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

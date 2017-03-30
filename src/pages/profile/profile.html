@@ -1,0 +1,110 @@
+<!--
+  Generated template for the Profile page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content class="content">
+
+  <div class="header">
+
+    <img src="assets/images/header.jpg" alt="profile header" />
+
+  </div>
+
+  <div class="info">
+
+    <ion-card class="details">
+
+      <ion-list inset no-lines>
+
+        <ion-row>
+
+          <ion-col>
+
+            <p> 5,000 followers</p>
+
+          </ion-col>
+
+          <ion-col>
+
+            <p> 5,000 follows</p>
+
+          </ion-col>
+
+        </ion-row>
+
+        <hr class="hint">
+
+        <ion-item class="transparent">
+
+          <ion-label stacked color="dark">User Id</ion-label>
+          <ion-input [(ngModel)]="userid" disabled="true"></ion-input>
+
+        </ion-item>
+
+        <ion-item class="transparent">
+
+          <ion-label stacked  color="dark">Full Name</ion-label>
+          <ion-input [disabled]="disable" [(ngModel)]="fullname"></ion-input>
+          
+        </ion-item>
+
+        <ion-item class="transparent">
+
+          <ion-label stacked  color="dark">Username</ion-label>
+          <ion-input [disabled]="disable" [(ngModel)]="username"></ion-input>
+          
+        </ion-item>
+
+        <ion-item class="transparent">
+
+          <ion-label stacked  color="dark">Date Of Birth</ion-label>
+          <ion-input [disabled]="disable" [(ngModel)]="dob"></ion-input>
+          
+        </ion-item>
+
+        <ion-item class="transparent">
+
+          <ion-label stacked  color="dark">Age</ion-label>
+          <ion-input [disabled]="disable" [(ngModel)]="age"></ion-input>
+          
+        </ion-item>
+
+        <ion-item class="transparent">
+
+          <ion-label stacked color="dark">Email</ion-label>
+          <ion-input [disabled]="disable" [(ngModel)]="email"></ion-input>
+          
+        </ion-item>
+
+        <ion-item class="transparent">
+
+          <ion-label stacked color="dark">Blog</ion-label>
+          <ion-input [disabled]="disable" [(ngModel)]="blog"></ion-input>
+          
+        </ion-item>
+
+      </ion-list>
+
+    </ion-card>
+
+  </div>
+
+  <div class="picture">
+
+    <img src="http://lorempixel.com/50/50" alt="profile-image"/>
+
+  </div>
+
+  <ion-icon padding class="edit" name="create" color="theme" (click)="openFileChooser()"></ion-icon>
+
+  <div class="edit" padding>
+
+    <ion-icon name="create" color="theme" (click)="toEditPage()"></ion-icon>
+
+  </div>
+
+</ion-content>

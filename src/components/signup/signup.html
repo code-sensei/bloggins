@@ -1,0 +1,85 @@
+<!--
+  Generated template for the Signup component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+
+<ion-content class="content" no-padding>
+
+    <div class="Page">
+
+      <ion-row>
+
+        <ion-col>
+
+          <div class="logo">
+
+            <p>Bloggins</p>
+
+          </div>
+
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+
+        <ion-col>
+
+          <p class="welcome-text">welcome to your world</p>
+
+        </ion-col>
+
+      </ion-row>
+
+    </div>
+
+    <ion-list inset no-lines>
+
+      <ion-item class="transparent">
+
+        <ion-icon name="pricetags"></ion-icon>
+        <ion-label floating color="light">Username</ion-label>
+        <ion-input class="bordered" [(ngModel)]="username"></ion-input>
+
+      </ion-item>
+
+      <ion-item class="transparent">
+
+        <ion-label floating color="light">Email</ion-label>
+        <ion-input class="bordered" [(ngModel)]="email" type="email"></ion-input>
+
+      </ion-item>
+
+      <ion-item class="transparent">
+
+        <ion-label floating color="light">Password</ion-label>
+        <ion-input class="bordered" [(ngModel)]="password" type="password"></ion-input>
+
+      </ion-item>
+
+      <ion-item class="transparent">
+
+        <button ion-button block class="bordered" (click)="signup($event)" padding>Sign Up</button>
+
+      </ion-item>
+
+      <ion-item class="transparent">
+
+        <p class="hint">Terms & Conditions Apply</p>
+
+      </ion-item>
+
+    </ion-list>
+
+    <ion-item class="transparent">
+
+      <p class="hint">Already have an account? ' <span class="hint" (click)="toLogin()">Log In</span> </p>
+
+    </ion-item>
+
+    
+
+
+</ion-content>
